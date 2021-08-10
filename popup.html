@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./styles/style.css" />
+
+  <body>
+    <div class="main">
+      <div class="header">
+        <div class="logo">
+          <a href="https://listy.cf">
+            <img src="./images/logo.png" alt="listy logo" /></a>
+        </div>
+
+        <div class="user-content">
+          <h5 id="username">Anonymous</h5>
+        </div>
+      </div>
+
+      <div class="content container">
+
+
+        <!-- start add item form -->
+
+        <form id="listForm" class="add-item-form">
+            <div class="mb-3">
+              <input name="link" autocomplete="off" type="text" class="form-control" id="list-item-input" placeholder="Link">
+            </div>
+            <div class="mb-3 autocomplete">
+                <input name="list" autocomplete="off" type="text" class="form-control" id="list-input" placeholder="List">
+            </div>
+            <div class="mb-3">
+                <input name="tags" autocomplete="off" type="text" class="form-control" id="list-tags-input" placeholder="e.g. tag1, tag2, tag3">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="type" id="videoType" value="video" checked>
+                <label class="form-check-label" for="videoType">
+                  Video
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="type" id="articleType" value="article">
+                <label class="form-check-label" for="articleType">
+                  Article
+                </label>
+            </div>
+            <button id="listFormSubmitBtn" type="submit" class="btn btn-primary addBtn">Add</button>
+        </form>
+
+
+        <form id="loginForm">
+            <div class="mb-3">
+              <input name="email" autocomplete="off" type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="mb-3">
+                <input name="password" autocomplete="off" type="password" class="form-control" placeholder="Password">
+            </div>
+            
+            <button type="submit" class="btn btn-primary addBtn">Log In</button>
+        </form>
+
+        <!-- end add item form -->
+
+
+
+        <!-- start fab btn -->
+        <!-- <div class="btn-group-fab" role="group" aria-label="FAB Menu">
+            <div>
+              <button
+                type="btn"
+                class="btn btn-main btn-primary has-tooltip"
+                data-placement="left"
+                title="Add"
+              >
+                <i id="add-icon" class="fa fa-plus"></i>
+              </button>
+              <button
+                id="current-link-btn"
+                type="button"
+                class="btn btn-sub has-tooltip"
+                data-placement="left"
+                title="Current tab"
+              >
+                <i class="fa fa-link"></i>
+              </button>
+              <button
+                id="new-link-btn"
+                type="button"
+                class="btn btn-sub has-tooltip"
+                data-placement="left"
+                title="New"
+              >
+                <i class="fa fa-list"></i>
+              </button>
+            </div>
+          </div> -->
+          <!-- end fab btn -->
+
+
+
+
+      </div>
+
+      <div id="alert">
+        Item added sucessfully
+      </div>
+
+      <a id="logoutBtn" href="#"> Log out </a>
+
+    </div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

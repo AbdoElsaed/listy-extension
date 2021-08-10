@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #262729;
+  color: rgb(250, 248, 248);
+}
+#alert {
+  position: absolute;
+  bottom: 20px;
+  left: 20%;
+  z-index: 5;
+  background-color: rgb(100, 184, 100);
+  border-radius: 5px;
+  padding: 5px 20px;
+  transition: all .5s ease-in-out;
+  color: #3f3f3f;
+  font-weight: bold;
+  opacity: 0;
+}
+
+#logoutBtn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  z-index: 5;
+  color: rgb(133, 131, 131);
+}
+
+.main {
+  width: 400px;
+  height: 500px;
+}
+
+.main .header {
+  width: 100%;
+}
+
+.main .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  color: #CCC;
+}
+
+.main .header .logo {
+  margin: 20px;
+}
+
+.main .header .logo img {
+  width: 100px;
+  height: 50px;
+}
+
+.main .header .user-content {
+  margin: 20px;
+}
+
+/* start fab btn */
+
+/* .main .btn-group-fab {
+    position: fixed;
+    width: 50px;
+    height: auto;
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  .main .btn-group-fab div {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .main .btn-group-fab .btn {
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 4px;
+    width: 40px;
+    height: 40px;
+    margin: 4px auto;
+  }
+  
+  .main .btn-group-fab .btn-main {
+    width: 50px;
+    height: 50px;
+    right: 50%;
+    margin-right: -25px;
+    z-index: 9;
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  .main .btn-group-fab .btn-sub {
+    bottom: 0;
+    z-index: 8;
+    right: 50%;
+    margin-right: -20px;
+    -webkit-transition: all 2s;
+    transition: all 0.5s;
+    background-color: #3f3f3f;
+    color: #eee;
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  .main .btn-group-fab.active .btn-sub:nth-child(2) {
+    bottom: 60px;
+  }
+  .main .btn-group-fab.active .btn-sub:nth-child(3) {
+    bottom: 110px;
+  }
+  .main .btn-group-fab.active .btn-sub:nth-child(4) {
+    bottom: 160px;
+  }
+  .main .btn-group-fab .btn-sub:nth-child(5) {
+    bottom: 210px;
+  } */
+
+/* end fab btn */
+
+/* start add link form */
+
+.main form {
+  margin-top: 50px;
+}
+
+.main form .form-check {
+  display: inline-block;
+}
+
+.main form input {
+  background-color: #262729;
+  border: 1px solid #3f3f3f;
+  outline: none;
+  box-shadow: none;
+  color: #ddd;
+}
+.main form input[type="text"]:focus {
+  background-color: #262729;
+  border: 1px solid #666464;
+  outline: none;
+  box-shadow: none;
+  color: #ddd;
+}
+
+.main form input[type="email"]:focus {
+  background-color: #262729;
+  border: 1px solid #666464;
+  outline: none;
+  box-shadow: none;
+  color: #ddd;
+}
+
+.main form input[type="password"]:focus {
+  background-color: #262729;
+  border: 1px solid #666464;
+  outline: none;
+  box-shadow: none;
+  color: #ddd;
+}
+
+.main form input[type="radio"]:focus {
+  outline: none;
+  box-shadow: none;
+  color: #ddd;
+}
+
+.main form .addBtn {
+  display: block;
+  margin-top: 10px;
+  padding: 2px 15px;
+}
+
+/* end add link form */
+
+/* start autocomplete input styling */
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #666464;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 150px;
+  overflow-y: scroll;
+  scroll-behavior: auto;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #3a3939;
+  border-bottom: 1px solid #666464;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #2f2f30;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: #2f2f30 !important;
+  color: #ffffff;
+}
+/* end autocomplete input styling */
